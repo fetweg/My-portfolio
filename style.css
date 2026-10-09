@@ -1,0 +1,51 @@
+body {margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+.profile-pic {width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: block;
+    margin: 0 auto;
+}
+header {background: #17243d;
+    color: white;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+header h1 {margin: 0;}
+nav {display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+nav a {color: gray;
+text-decoration: none;
+}
+nav a :hover {color:lightblue}
+main{display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+padding: 30px;
+}
+section {flex: 1;
+min-width: 200px;
+padding: 15px;
+#about#projects#contact {text-align: center;}
+footer{background-color:#1e3a5f;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 15px;}
+@media(max-wwidth: 600px) {header {flex-direction: column;
+    gap: 15px;
+}}
+main {flex-direction: column;}
+.profile-pic {width: 150px;
+height: 150px;}
+.services {flex-direction: column;}}
