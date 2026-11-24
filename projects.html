@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects and Skills | Kyle Scott</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Kyle Scott</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section>
+      <h2>My Skills</h2>
+      <p>These are some of the skills I am learning and improving as a student.</p>
+      <div class="skills-grid">
+        <div class="skill"><span>HTML</span><div class="bar"><div style="width:75%"></div></div><small>75% - Beginner</small></div>
+        <div class="skill"><span>CSS</span><div class="bar"><div style="width:65%"></div></div><small>65% - Beginner</small></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div style="width:35%"></div></div><small>35% - Learning</small></div>
+        <div class="skill"><span>C Programming</span><div class="bar"><div style="width:45%"></div></div><small>45% - Learning</small></div>
+        <div class="skill"><span>Problem Solving</span><div class="bar"><div style="width:60%"></div></div><small>60% - Developing</small></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>My Projects</h2>
+      <p>These projects show some of the work I have completed while learning technology.</p>
+      <div class="filter-buttons">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="web">Web</button>
+        <button type="button" class="filter-btn" data-filter="programming">Programming</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card" data-category="web">
+          <h3>Personal Portfolio Website</h3>
+          <p>A website that introduces me, my interests and my career goals. I created it while learning how to structure and style web pages.</p>
+          <p><strong>Technologies:</strong> HTML, CSS</p>
+          <a href="https://github.com/fetweg/My-portfolio" target="_blank" rel="noopener">View GitHub repository</a>
+        </article>
+        <article class="project-card" data-category="programming">
+          <h3>Student Grading Program</h3>
+          <p>A beginner programming exercise that uses marks to determine a student's grade. It helped me practise conditions and basic input and output.</p>
+          <p><strong>Technologies:</strong> C</p>
+          <span class="coming-soon">Course exercise</span>
+        </article>
+        <article class="project-card" data-category="web">
+          <h3>Portfolio Projects Page</h3>
+          <p>This page adds skills, project information, a filter feature and a contact form to my original portfolio website.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <span class="coming-soon">This page</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services I Can Offer</h2>
+      <div class="services-grid">
+        <div class="service-card"><h3>Basic Website Design</h3><p>Creating simple web pages using HTML and CSS.</p></div>
+        <div class="service-card"><h3>Basic Computer Assistance</h3><p>Helping with simple computer tasks and software setup.</p></div>
+        <div class="service-card"><h3>Student Support</h3><p>Sharing basic guidance on beginner computer studies and web technology.</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Use the form below to send me a message. All fields are required.</p>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+        <button type="submit">Submit Message</button>
+        <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Kyle Scott. All rights reserved.</p></footer>
+</body>
+</html>
